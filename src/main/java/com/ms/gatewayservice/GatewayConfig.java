@@ -88,7 +88,7 @@ public class GatewayConfig {
 
 
             
-            if (uri[1].equals("inscription") || Arrays.asList(uri).contains("role"))
+            if (uri[1].equals("inscription") || Arrays.asList(uri).contains("role") || Arrays.asList(uri).contains("users"))
                 return chain.filter(exchange);
             if(!uri[1].equals("auth")){
             String authorizationHeader = headers.getFirst(HttpHeaders.AUTHORIZATION);
